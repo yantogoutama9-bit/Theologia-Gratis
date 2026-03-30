@@ -879,16 +879,17 @@
             transition: background 0.3s ease;
         }
 
-        /* Prayer Box - Luxury */
+        /* Prayer Box - Updated to be more readable */
         .prayer-box {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-            color: var(--white);
+            background: linear-gradient(135deg, #faf9f6 0%, #f5f3ef 100%);
+            color: var(--primary);
             padding: 4rem;
             margin: 3rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
-            border: 1px solid var(--gold);
+            border: 2px solid var(--gold);
+            box-shadow: 0 20px 60px rgba(201, 169, 98, 0.15);
         }
 
         .prayer-box::before {
@@ -899,23 +900,35 @@
             transform: translateX(-50%);
             color: var(--gold);
             font-size: 2rem;
-            opacity: 0.5;
+            opacity: 0.6;
+        }
+
+        .prayer-box::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
         }
 
         .prayer-box h4 {
-            color: var(--gold);
+            color: var(--primary);
             font-size: 1.8rem;
             margin-bottom: 2.5rem;
             font-family: 'Cormorant Garamond', serif;
             margin-top: 2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
         .prayer-box p {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             line-height: 2.2;
             font-style: italic;
-            opacity: 0.95;
+            color: var(--text);
             text-align: center;
             max-width: 700px;
             margin: 0 auto;
@@ -1873,7 +1886,7 @@
                 </div>
             </div>
 
-            <!-- Block VII -->
+            <!-- Block VII - Updated Prayer Box with light background -->
             <div class="content-block">
                 <div class="block-header">
                     <span class="block-number">VII.</span>
